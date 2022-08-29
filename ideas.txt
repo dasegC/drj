@@ -1,0 +1,30 @@
+Buscar paleta de colores.
+Definir nombre de web
+Crear Logo
+head --> hashtags, favicon
+index.html --> header, navbar , css Flexbox - imágen de empresa. 
+    https://pixabay.com/
+    https://www.pexels.com/es-es/
+    Descripción del proyecto / frase
+    Animaciones / Transiciones
+proyectos.html --> link a paginas desarrolladas. Imágenes que linkeen a la web. CSS Grid.
+contacto.html --> Formulario.
+        - Agregar iframe, dirección física.
+AcercaDe.html --> Css Grid / menu desplegable
+        julio.html
+             - Foto de perfil 
+             - Link a redes individuales
+             - Descripción
+             - Tabla con lista de habilidades / tecnologías que maneja cada uno.
+        dario.html
+            - Foto de perfil 
+            - Link a redes individuales
+            - Descripción
+            - Tabla con lista de habilidades / tecnologías que maneja cada uno.
+        ricardo.html
+            - Foto de perfil 
+            - Link a redes individuales
+            - Descripción
+            - Tabla con lista de habilidades / tecnologías que maneja cada uno.
+Crear Redes sociales
+Footer --> Descargar img de redes.
