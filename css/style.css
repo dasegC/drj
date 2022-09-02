@@ -1,0 +1,35 @@
+body{
+  padding: 1rem;
+  background-color: #a4bae7;
+}
+
+
+/* Para darle estilo a los links de la barra de navegación*/
+.navLink {
+	display: inline-block;
+	background: #1a241f;
+	padding: 0.625rem 4.375rem;
+	text-decoration: none;
+	color: #e6f2e9;
+	font-size: 15px;
+
+}
+
+nav {
+	background-color: black;
+	
+}
+
+.for-centerthings{
+  text-align: center;
+}
+
+a {
+
+	text-decoration: none
+
+}
+
+a:hover {
+  color: #5858FA;
+}
