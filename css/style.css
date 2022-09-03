@@ -1,7 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 
+:root {
+    --paddingsecciones: 60px 0;
+    --marginelementos: 40px;
+    --bordes: 15px;
+}
+
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', Verdana, sans-serif;
+}
+
+header, main, footer {
+    width: 1200px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: var(--paddingsecciones);
+}
+
+.menu-nav {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+header > nav > div .logo {
+    height: 150px;
+}
+
+header nav .navbar-container li {
+    list-style: none;
+    display: inline-block;
+}
+
+header nav .navbar-container li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.red-izq-sup {
+    border-top-left-radius: var(--bordes);
+}
+
+.red-izq-inf {
+    border-bottom-left-radius: var(--bordes);
+}
+
+.red-der-sup {
+    border-top-right-radius: var(--bordes);
+}
+
+.red-der-inf {
+    border-bottom-right-radius: var(--bordes);
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    display: flex;
+
+}
+
+footer .contenedor-redes img {
+    width: 50px;
 }
