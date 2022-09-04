@@ -33,3 +33,39 @@ a {
 a:hover {
   color: #5858FA;
 }
+
+table , th, td {
+	border:1px solid black;
+	font-size: 15px;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #a2c4f6;
+  opacity: 0.9;
+	
+}
+
+textarea {
+  width: 15%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+	margin-top: 2rem;
+}
+
+h2 {
+
+	font-size: 25px;
+	}
+
+.textSize1 {
+		font-size: 35px;
+}
+
+.textSize2 {
+	font-size: 20px;
+}
