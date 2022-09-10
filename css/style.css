@@ -27,7 +27,7 @@ main{
 
 
 .contenedor {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
@@ -47,6 +47,7 @@ main{
   top: 0;
   z-index: 10;
 }
+
 
 header nav div .logo {
   height: 70px;
@@ -163,7 +164,5 @@ footer .contenedor-redes img {
     gap: 1rem;
     grid-auto-rows: 20rem;
     grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
-    overflow: hidden;
-    clear: both;
     
 }
