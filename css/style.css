@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
 
 :root {
-  --paddingsecciones: 60px 0;
-  --marginelementos: 40px;
+  --paddingsecciones: 2.5rem 3rem;
+  --marginelementos: 10px;
   --bordes: 15px;
   --colorprincipaltexto: rgba(255, 255, 255, 0.87);
   --colortitulo: rgba(255, 255, 255, 0.979);
@@ -20,116 +20,112 @@ body {
   background-color: var(--colorfondo);
 }
 
-main{
-  width: 1220px;
-  margin: auto;
+.container{
+  width: 90%;
+  max-width: 66.6rem;
+  margin: 0 auto;
 }
 
-
-.contenedor {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: var(--paddingsecciones);
-}
-
-.menu-nav {
-  padding: 0;
-  background-color: var(--colorfondo);
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+header{
   position: fixed;
   top: 0;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  background-color: var(--colorfondo);
+  z-index: 2;
 }
 
 
-header nav div .logo {
-  height: 70px;
+.menu-nav {
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
 }
 
-header .menu-nav .titulo {
+.menu-nav .titulo {
   color: var(--colortitulo);
 }
 
-/* header nav .navbar-container ul{
-    
-} */
+.navbar-container {
+  /* transition: all 0.9S linear ; */
+}
 
-header nav .navbar-container li {
+.navbar-container ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.navbar-container ul li {
   display: inline-block;
 }
 
-header nav .navbar-container li a {
-  display: inline-block;
-  padding: 10px;
+.navbar-container ul li a {
+  display: block;
   text-decoration: none;
   color: #fff;
+  padding: 0.5rem 1rem;
+  transition: all 1.0s linear;
+  border-radius: 0.5rem;
 }
 
-header nav .navbar-container li a:hover {
-  color: rgb(13, 16, 219);
+.navbar-container ul li a:hover {
+  color: rgba(16, 7, 85, 0.849);
+  background-color: #fff;
+  
 }
 
 /* ------ MAIN ----- */
-main {
+main{
+  padding-top: 9rem;
+  max-width: 66.6rem;
+  margin: auto;
   background-color: var(--colorfondo);
-}
-main .hero-container {
-  background-image: url("../img/hombre-web.png");
-  background-size: cover;
-  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
-  position: relative;
-  top: 150px;
+  height: 45rem;
 }
 
-main .hero-container .hero-text {
+.hero-container {
+  background-image: url("../img/hombre-web.png");
+  background-size: cover ;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+  position: relative;
+  height: 33.3rem;
+}
+
+.hero-container .hero-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--colorprincipaltexto);
   width: 50%;
   padding: var(--paddingsecciones);
   float: right;
 }
+
 .hero-title {
   margin: 10px 15px;
   padding-top: 20px;
   text-align: center;
   color: var(--colortitulo);
 }
-main .hero-container .hero-text p {
-  margin: 10px 40px;
-  text-align: justify;
-  line-height: 27px;
-  font-weight: 300;
-  padding-bottom: 10px;
-  color: var(--colortitulo);
-}
 
-main .hero-container .btn-container {
-  text-align: center;
-}
-
-main .hero-container .btn {
-  display: inline-block;
+.hero-container .btn {
+  display: block;
   text-align: center;
   margin-left: 50px;
-  padding: 10px 8px;
+  padding: 10px 10px;
   border-radius: 20px;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
   text-decoration: none;
+  transition: all 1s linear;
 }
 
-main .hero-container .btn:hover {
-  background-color: var(--colorfondo);
+.hero-container .btn:hover {
+  color: rgba(16, 7, 85, 0.849);
+  background-color: #fff;
 }
 
 /* ----- FOOTER ----- */
@@ -138,14 +134,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: 250px;
   background-color: var(--colorfondo);
 }
 
 footer .contenedor-redes {
   padding: 15px;
   border-bottom: 1px solid white;
+
 }
 
 footer .contenedor-redes,
@@ -155,14 +150,4 @@ footer .contenedor-redes,
 
 footer .contenedor-redes img {
   width: 50px;
-}
-
-/* ----- GRID ----- */
-
-.gallery {
-    display: grid;
-    gap: 1rem;
-    grid-auto-rows: 20rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
-    
 }
