@@ -151,3 +151,11 @@ footer .contenedor-redes,
 footer .contenedor-redes img {
   width: 50px;
 }
+
+/*ricardo*/
+.title-tuproyecto {
+  margin: 10px 15px;
+  padding-top: 20px;
+  /* text-align: center; */
+  color: var(--colortitulo);
+}
