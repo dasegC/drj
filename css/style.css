@@ -21,7 +21,8 @@ body {
 
 }
 
-.container{
+.container,
+.grid {
   width: 90%;
   max-width: 66.6rem;
   margin: 0 auto;
@@ -86,7 +87,7 @@ main{
   max-width: 66.6rem;
   margin: auto;
   background-color: var(--colorfondo);
-  height: 45rem;
+  /* height: 45rem; */
 }
 
 .hero-container {
@@ -108,7 +109,8 @@ main{
   float: right;
 }
 
-.hero-title {
+.hero-title,
+.titulo {
   margin: 10px 15px;
   padding-top: 20px;
   text-align: center;
@@ -131,6 +133,50 @@ main{
 .hero-container .btn:hover {
   color: rgba(16, 7, 85, 0.849);
   background-color: #fff;
+}
+
+/* ----- PROYECTOS ----- */
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+
+.project-title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.personal-project {
+  grid-column-start: 3;
+  grid-column-end: -3;
+}
+
+.btn-project a {
+  color: var(--colorprincipaltexto);
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: 8px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition:  color 0.2s linear;
+}
+
+
+
+.categoria {
+  color: var(--colorprincipaltexto);
+  text-align: center;
+}
+
+.project-img img{
+  margin: auto;
+  display: block;
+  border-radius: 60px;
 }
 
 /* ----- FOOTER ----- */
