@@ -37,11 +37,6 @@ header{
   z-index: 2;
 }
 
-.textSize1 {
-  font-size: 1.5em;
-}
-
-
 .menu-nav {
   display: flex;  
   justify-content: space-around;
@@ -81,7 +76,7 @@ header{
 main{
   padding-top: 9rem;
   max-width: 66.6rem;
-  margin: auto;
+  margin: 0 auto;
   background-color: var(--colorfondo);
   /* height: 45rem; */
 }
@@ -105,13 +100,6 @@ main{
   float: right;
 }
 
-.hero-title,
-.titulo {
-  margin: 10px 15px;
-  padding-top: 20px;
-  text-align: center;
-  color: var(--colortitulo);
-}
 
 .hero-container .btn {
   display: block;
@@ -147,10 +135,11 @@ main{
   
 }
 
-.project-title {
+.full-column {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+
 
 .btn-project {
   display: flex;
@@ -254,7 +243,7 @@ footer .contenedor-redes img {
 }
 
 textarea {
-  width: 25%;
+  width: 40vw;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -272,12 +261,19 @@ table , th, td {
   white-space: nowrap;	
 }
 
+.text-area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  justify-items: center;
+}
+
 .for-footer{
  margin-top: auto;
 }
 
 .input-width{
-  width: 25%;
+  width: 25vw;
 }
 
 .hero-container-proyectos {
@@ -286,4 +282,61 @@ table , th, td {
   /* clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%); */
   position: relative;
   height: 33.3rem;
+}
+
+/* ----- ACERCA DE ----- */
+
+.about-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+  justify-items: center;
+  padding-top: 90px ;
+}
+
+.about-container p {
+  margin: 0 20px;
+}
+
+.container img {
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 10px;
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+
+.contenedor-redes img {
+  width: 50px;
+}
+
+.personal {
+  display: flex;
+  justify-content: center;
+}
+
+.borde {
+  border: 2px solid var(--colortitulo);
+}
+
+/* ----- ESTILOS TEXTO ----- */
+
+.textSize1 {
+  font-size: 1.5em;
+}
+
+.texto {
+  text-align: justify;
+  color: var(--colorprincipaltexto);
+  line-height: 27px;
+}
+
+.hero-title,
+.titulo {
+  margin: 10px 15px;
+  padding-top: 20px;
+  text-align: center;
+  color: var(--colortitulo);
 }
