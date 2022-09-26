@@ -21,7 +21,8 @@ body {
 
 }
 
-.container{
+.container,
+.grid {
   width: 90%;
   max-width: 66.6rem;
   margin: 0 auto;
@@ -51,10 +52,6 @@ header{
   color: var(--colortitulo);
 }
 
-.navbar-container {
-  /* transition: all 0.9S linear ; */
-}
-
 .navbar-container ul {
   padding: 0;
   margin: 0;
@@ -70,7 +67,7 @@ header{
   text-decoration: none;
   color: #fff;
   padding: 0.5rem 1rem;
-  transition: all 1.0s linear;
+  transition: background-color 1.0s linear;
   border-radius: 0.5rem;
 }
 
@@ -86,7 +83,7 @@ main{
   max-width: 66.6rem;
   margin: auto;
   background-color: var(--colorfondo);
-  height: 45rem;
+  /* height: 45rem; */
 }
 
 .hero-container {
@@ -108,7 +105,8 @@ main{
   float: right;
 }
 
-.hero-title {
+.hero-title,
+.titulo {
   margin: 10px 15px;
   padding-top: 20px;
   text-align: center;
@@ -132,6 +130,91 @@ main{
   color: rgba(16, 7, 85, 0.849);
   background-color: #fff;
 }
+
+/* ----- PROYECTOS ----- */
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+}
+
+.grid .hero-title {
+  border-bottom: 1px solid var(--colortitulo);
+  padding-bottom: 5px;
+  
+}
+
+.project-title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.btn-project {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn-project a,
+.personal-project a {
+  color: var(--colorprincipaltexto);
+  background-color: transparent;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  padding: 10px 24px;
+  text-decoration: none;
+  border: 1px solid var(--colorprincipaltexto);
+  border-radius: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.btn-project a:hover,
+.personal-project a:hover {
+  color: var(--colorfondo);
+  background-color: var(--colortitulo);
+}
+
+.categoria {
+  color: var(--colorprincipaltexto);
+  text-align: center;
+}
+
+.project-img {
+  overflow: hidden;
+  border-radius: 60px;
+  width: 300px;
+  height: 300px;
+}
+
+.project-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project-img:hover img {
+  transform: scale(1.7);
+  border-radius: 60px;
+}
+
+.project-img img{
+  margin: auto;
+  display: block;
+  border-radius: 60px;
+  transition: transform 1s ;
+}
+
+.personal-project {
+  grid-column-start: 3;
+  grid-column-end: -3;
+}
+
 
 /* ----- FOOTER ----- */
 
