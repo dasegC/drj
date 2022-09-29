@@ -17,8 +17,7 @@
 
 body {
   font-family: "Ubuntu", Verdana, sans-serif;
-  background-color: var(--colorfondo);
-
+  background-color:  var(--colorfondo) !important; 
 }
 
 .container,
@@ -41,6 +40,14 @@ header{
   display: flex;  
   justify-content: space-around;
   align-items: center;
+}
+
+.menu-nav .logo-container {
+  width: auto;
+}
+
+.menu-nav .logo-container img {
+  width: 150px;
 }
 
 .menu-nav .titulo {
@@ -83,7 +90,7 @@ main{
 
 .hero-container {
   background-image: url("../img/hombre-web.png");
-  background-size: cover ;
+  background-size: contain ;
   clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
   position: relative;
   height: 33.3rem;
@@ -339,4 +346,10 @@ table , th, td {
   padding-top: 20px;
   text-align: center;
   color: var(--colortitulo);
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media only screen and (m) {
+  
 }
