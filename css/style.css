@@ -38,7 +38,7 @@ header{
 
 .menu-nav {
   display: flex;  
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -345,10 +345,13 @@ table , th, td {
   line-height: 27px;
 }
 
+.hero-title {
+  padding-top: 20px;
+}
+
 .hero-title,
 .titulo {
   margin: 10px 15px;
-  padding-top: 20px;
   text-align: center;
   color: var(--colortitulo);
 }
