@@ -361,3 +361,8 @@ table , th, td {
 @media only screen and (m) {
   
 }
+
+.about-us-lines{
+  font-size: 1.2rem;
+  text-align: center;
+}
