@@ -4,7 +4,8 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #E5E5E5;
+	background: rgba(11, 25, 35, 255);
+	color: rgba(255, 255, 255, 0.87);
 }
 
 main {
@@ -125,6 +126,10 @@ main {
 
 .formulario__mensaje-exito-activo {
 	display: block;
+}
+
+.btn-color{
+	background-color: #0075FF;
 }
 
 /* ----- -----  Estilos para Validacion ----- ----- */
