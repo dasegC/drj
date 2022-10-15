@@ -11,75 +11,79 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   </head>
-  <body>
+  <body class="grid">
     <header>
-      <div class="container">
-        <nav class="menu-nav">
+      <div class="container menu-nav">
           <div class="logo-container">
-            <a href="index.html" title="Home"><img class="logo" width="150" src="./img/logo-drj.png" alt="Logo" /></a>
+            <a href="index.html" title="Home"><img class="logo" src="./img/logo-drj.png" alt="Logo"></a>
           </div>
           <h1 class="titulo">DR.J Full Stack Devs</h1>
-          <div class="navbar-container">
-            <ul>
-              <li><a href="index.html" rel="noopener noreferrer" title="Home" class="red-izq-sup red-izq-inf">Home</a></li>
-              <li><a href="proyectos.html" rel="noopener noreferrer" title="Proyectos">Proyectos</a></li>
-              <li><a href="acercade.html" rel="noopener noreferrer" title="Acerca De">Acerca De</a></li>
-              <li><a href="contacto.html" rel="noopener noreferrer" title="Contacto" class="red-der-sup red-der-inf">Contacto</a></li>
-              <li><a href="index-english.html" rel="noopener noreferrer" title="english-version">English</a></li>
-            </ul>
-          </div>
-        </nav>
+            <nav id="nav" class="main-nav">
+              <div class="nav-links navbar-container">
+                <ul>
+                  <li><a href="index.html" rel="noopener noreferrer" title="Home" class="link-item">Home</a></li>
+                  <li><a href="proyectos.html" rel="noopener noreferrer" title="Proyectos" class="link-item">Proyectos</a></li>
+                  <li><a href="acercade.html" rel="noopener noreferrer" title="Acerca De" class="link-item">Acerca de</a></li>
+                  <li><a href="contacto.html" rel="noopener noreferrer" title="Contacto" class="link-item">Contacto</a></li>
+                  <li><a href="index-english.html" rel="noopener noreferrer" title="english-version">English</a></li>
+                </ul>
+              </div>
+            </nav>
+            <button id="button-menu" class="button-menu ocultar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
       </div>
-      
-    </header>
+  </header>
     <main class="container">
-      <section class="hero-container container">
-        <h1 class="hero-title">Desarrollo Web Full Stack</h1>
-        
+      <section class="hero-container">
+        <div class="title-container">
+          <h2 class="hero-title">Desarrollo Web Full Stack</h2>
+        </div>
+        <div class="hero-img">
+          <picture>
+            <source media="(max-width: 600px)" srcset="./img/hombre-web-recorte.png">
+            <source media="(max-width: 850px)" srcset="./img/hombre-web950.png">
+            <source media="(max-width: 1200px)" srcset="./img/hombre-web.png">
+            <img src="./img/hombre-web.png" alt="hombre-tablet">
+          </picture>
+        </div>
         <div class="hero-text">
-          <h2 class="hero-title">Diseñamos la web a tu medida</h2>
-          <p>
-            Nos destacamos por ser un equipo de trabajo que busca la excelencia 
-            hasta en el más mínimo
-            detalle.
-          <p>
-            Contamos con diveras herramientas y conocimientos de las tecnologías más avanzadas, 
-            para llevar la experiencia de usuario a otro nivel.
-            Sumate y dinos lo que quieres, nostros hacemos la magia.
-          </p>
-            
-            <em></em>
-          </p>
+          <div class="contenedor-titulo">
+            <h3 class="hero-title">Diseñamos la web a tu medida</h3>
+          </div>
+          <div class="parrafo">
+            <p>
+              Nos destacamos por ser un equipo de trabajo que busca la excelencia 
+              hasta en el más mínimo
+              detalle. <br>
+              Contamos con diveras herramientas y conocimientos de las tecnologías más avanzadas, 
+              para llevar la experiencia de usuario a otro nivel.
+              Sumate y decinos lo que querés, nostros hacemos la magia.
+              </p>
+          </div>
           <div class="btn-container">
             <a href="proyecto-a-medida.html" class="btn">Comienza ahora</a>
           </div>
         </div>
-        
     </section>
     </main>
     <footer>
       <div class="contenedor-redes">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-          ><img src="./img/facebook.png" alt="facebook" title="Facebook"
-        /></a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-          ><img src="./img/instagram.png" alt="instagram" title="Instagram"
-        /></a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-          ><img src="./img/linkedin.png" alt="linkedin" title="Linkedin"
-        /></a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
-          ><img src="./img/gorjeo.png" alt="twitter" title="Twitter"
-        /></a>
-        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"
-          ><img src="./img/github5.png" alt="github" title="Github"
-        /></a>
-      </div>
-      <div class="copyright">
-        <p>
-          © 2022 Dr. J Developers
-        </p>
-      </div>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./img/facebook.png" alt="facebook" title="Facebook"></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt="instagram" title="Instagram"></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt="linkedin" title="Linkedin"></a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="./img/gorjeo.png" alt="twitter" title="Twitter"></a>
+          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img src="./img/github5.png" alt="github" title="Github"></a>
+        </div>
+        <div class="copyright">
+            <p>
+                © 2022 Dr. J Developers
+              </p>
+          </div>
     </footer>
+    <script src="./js/burger.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

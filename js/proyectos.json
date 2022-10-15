@@ -1,0 +1,52 @@
+{
+    "datos":[
+        {
+            "id":1,
+            "titulo":"The Student's Coffee",
+            "imagen":"./img/proyectos/studentsCoffee.png",
+            "tipoImagen":"cafeteria",
+            "link":"https://studentscoffee.netlify.app/",
+            "categoria":["HTML", "CSS", "JS"]
+        },
+        {
+            "id":2,
+            "titulo":"Portfolio",
+            "imagen":"./img/proyectos/ricardoRodriguez.png",
+            "tipoImagen":"Portafolio",
+            "link":"https://eltoquericardo.github.io/ricardo-rodriguez/index.html",
+            "categoria":["HTML", "CSS", "JS"]
+        },
+        {
+            "id":3,
+            "titulo":"Layout Simple",
+            "imagen":"./img/proyectos/simpleLayout.png",
+            "tipoImagen":"Layout Simple",
+            "link":"https://simplelayout2022.netlify.app/",
+            "categoria":["HTML", "CSS", "JS"]
+        },
+        {
+            "id":4,
+            "titulo":"Herbworld app",
+            "imagen":"./img/proyectos/herbworld3.png",
+            "tipoImagen":"Herbworld App",
+            "link":"https://studentscoffee.netlify.app/",
+            "categoria":["HTML", "CSS", "JS"]
+        },
+        {
+            "id":5,
+            "titulo":"Trabajo",
+            "imagen":"./img/proyectos/ricardoRodriguez.png",
+            "tipoImagen":"",
+            "link":"https://eltoquericardo.github.io/ricardo-rodriguez/index.html",
+            "categoria":["HTML", "CSS", "JS"]
+        },
+        {
+            "id":6,
+            "titulo":"Trabajo",
+            "imagen":"./img/proyectos/simpleLayout.png",
+            "tipoImagen":"",
+            "link":"https://simplelayout2022.netlify.app/",
+            "categoria":["HTML", "CSS", "JS"]
+        }
+    ]
+}

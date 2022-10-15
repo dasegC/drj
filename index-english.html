@@ -13,80 +13,86 @@
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="grid">
+
   <header>
-    <div class="container">
-      <nav class="menu-nav">
+    <div class="container menu-nav">
         <div class="logo-container">
-          <a href="index-english.html" title="Home"><img class="logo" width="150" src="./img/logo-drj.png"
-              alt="Logo" /></a>
+          <a href="index.html" title="Home"><img class="logo" src="./img/logo-drj.png" alt="Logo"></a>
         </div>
         <h1 class="titulo">DR.J Full Stack Devs</h1>
-        <div class="navbar-container">
-          <ul>
-
-            <li><a href="index-english.html" rel="noopener noreferrer" title="Home"
-                class="red-izq-sup red-izq-inf">Home</a>
-            </li>
-            <li><a href="developments.html" rel="noopener noreferrer" title="Developments">Developments</a>
-            </li>
-            <li><a href="about-us.html" rel="noopener noreferrer" title="About-us">About us</a>
-            </li>
-            <li><a href="contact-us.html" rel="noopener noreferrer" title="Contact us"
-                class="red-der-sup red-der-inf">Contact</a>
-            </li>
-
-            <li><a href="index.html" rel="noopener noreferrer" title="versión-español">Español</a></li>
-            
-          </ul>
-        </div>
-      </nav>
+          <nav id="nav" class="main-nav">
+            <div class="nav-links navbar-container">
+              <ul>
+                <li><a href="index-english.html" rel="noopener noreferrer" title="Home" class="link-item">Home</a></li>
+                <li><a href="developments.html" rel="noopener noreferrer" title="Proyectos" class="link-item">Developments</a></li>
+                <li><a href="about-us.html" rel="noopener noreferrer" title="Acerca De" class="link-item">About us</a></li>
+                <li><a href="contact-us.html" rel="noopener noreferrer" title="Contacto" class="link-item">Contact us</a></li>
+                <li><a href="index.html" rel="noopener noreferrer" title="version-español">Español</a></li>
+              </ul>
+            </div>
+          </nav>
+          <button id="button-menu" class="button-menu ocultar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
     </div>
-
-  </header>
+</header>
+  
   <main class="container">
-    <section class="hero-container container">
-      <h1 class="hero-title">Full Stack Web Development</h1>
+    <section class="hero-container">
+      <div class="title-container">
+        <h2 class="hero-title">Full Stack Web Development</h2>
+      </div>
+      <div class="hero-img">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./img/hombre-web-recorte.png">
+          <source media="(max-width: 850px)" srcset="./img/hombre-web950.png">
+          <source media="(max-width: 1200px)" srcset="./img/hombre-web.png">
+          <img src="./img/hombre-web.png" alt="hombre-tablet">
+        </picture>
+      </div>
 
       <div class="hero-text">
-        <h2 class="hero-title">We create the Custom Website for you</h2>
-        <p>
-          We stand out for being a work team that seeks excellence even in the slightest detail.
-        <p>
-
-          We have a multiple tools and knowledge about the most advanced technologies to take the user experience to the
+        <div class="contenedor-titulo">
+          <h3 class="hero-title">We create the Custom <br> Website for you</h3>
+        </div>
+        <div class="parrafo">
+          <p>
+            We stand out for being a work team that seeks excellence even in the slightest detail.
+          We have a multiple tools and knowledge about the most <br>
+          advanced technologies to take the user experience to the
           highest level.
           Come on, tell us what you want and we make that dream alive.
-        </p>
-
-        <em></em>
-        </p>
+            </p>
+        </div>
         <div class="btn-container">
           <a href="custom-development.html" class="btn">Make it right now!</a>
         </div>
+      </div>
+
+        
       </div>
 
     </section>
   </main>
   <footer>
     <div class="contenedor-redes">
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./img/facebook.png"
-          alt="facebook" title="Facebook" /></a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png"
-          alt="instagram" title="Instagram" /></a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png"
-          alt="linkedin" title="Linkedin" /></a>
-      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="./img/gorjeo.png"
-          alt="twitter" title="Twitter" /></a>
-      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img src="./img/github5.png"
-          alt="github" title="Github" /></a>
-    </div>
-    <div class="copyright">
-      <p>
-        © 2022 Dr. J Developers
-      </p>
-    </div>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./img/facebook.png" alt="facebook" title="Facebook"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt="instagram" title="Instagram"></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt="linkedin" title="Linkedin"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="./img/gorjeo.png" alt="twitter" title="Twitter"></a>
+        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img src="./img/github5.png" alt="github" title="Github"></a>
+      </div>
+      <div class="copyright">
+          <p>
+              © 2022 Dr. J Developers
+            </p>
+        </div>
   </footer>
+  <script src="./js/burger.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
