@@ -69,6 +69,10 @@ section .hero-title {
   padding: 40px;
 }
 
+.contenedor-titulo .hero-title {
+  padding: 0;
+}
+
 .menu-nav {
   display: flex;
   justify-content: space-evenly;
@@ -155,18 +159,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   color: var(--colorprincipaltexto);
   width: 100%;
   padding-right: 60px;
 }
 
 .hero-container > .hero-text > .contenedor-titulo .hero-title {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .btn-container {
-  width: 100%;
+  width: 50%;
 }
 
 .hero-container .btn {
@@ -648,7 +652,11 @@ table , th, td {
   footer {
     text-align: center;
   }
+  .contenedor-titulo {
+    padding-top: 20px;
+  }
 }
+
 @media only screen and (min-width: 990px) {
   .contenedor-titulo,
   .parrafo {
