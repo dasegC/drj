@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: var(--colorfondo);
+    background-color: var(--colorfondo) !important;
 }
 
 .grid {
@@ -57,6 +57,12 @@ header {
 
 .padding-top {
   padding-top: 150px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
 }
 
 section .hero-title {
@@ -206,7 +212,15 @@ footer .contenedor-redes img {
   margin: 15px;
 }
 
+.wa {
+  width: 75px;
+}
 
+.secciones {
+  padding: var(--paddingsecciones);
+  margin-top: 40px !important;
+  border-top: 1px solid #fff;
+}
 
 
 /* ----- PROYECTOS ----- */
@@ -345,7 +359,6 @@ footer .contenedor-redes img {
 .title-tuproyecto {
   margin: 50px 15px;
   padding-top: 20px;
-  /* text-align: center; */
   color: var(--colortitulo);
   text-align: justify;
 }
@@ -420,6 +433,10 @@ table , th, td {
 
 .underline {
     text-decoration: underline rgb(13, 13, 121);
+}
+
+.centrado {
+  text-align: center;
 }
 
 /* MEDIA QUERY */
@@ -500,11 +517,12 @@ table , th, td {
     position: fixed;
     top: 150px;
     left: 0px;
-    width: 50%;
+    width: 100%;
+    min-height: 100px;
     margin-left: -100%;
     transition: all 0.2s linear;
     z-index: 300;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 
   .main-nav.mostrar {
