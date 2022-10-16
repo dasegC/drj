@@ -65,7 +65,7 @@
         <p class="textSize1">Let's start...</p>
       </div>
 
-      <form id="client-form" action="mailto:sistemaglobalcontacto@gmail.com" method="post" target="_blank"
+      <form id="client-form" data-netlify="true" method="post" target="_blank"
         rel="noopener noreferrer">
 
         <div>
@@ -235,6 +235,7 @@
             required><br>
           <input class="input-width" type="number" name="age" placeholder="Age" maxlength="3" min="18" max="110"
             required><br>
+            <div data-netlify-recaptcha="true"></div>
           <input type="submit" value="Submit">
         </div>
       </form>
