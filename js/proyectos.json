@@ -18,6 +18,14 @@
         },
         {
             "id":3,
+            "titulo":"Herbworld app",
+            "imagen":"./img/proyectos/herbworld3.png",
+            "tipoImagen":"Herbworld App",
+            "link":"https://eltoquericardo.github.io/herbworld/",
+            "categoria":["HTML", "CSS", "JS"]
+        },
+        {
+            "id":4,
             "titulo":"Layout Simple",
             "imagen":"./img/proyectos/simpleLayout.png",
             "tipoImagen":"Layout Simple",
@@ -25,20 +33,12 @@
             "categoria":["HTML", "CSS", "JS"]
         },
         {
-            "id":4,
-            "titulo":"Herbworld app",
-            "imagen":"./img/proyectos/herbworld3.png",
-            "tipoImagen":"Herbworld App",
-            "link":"https://studentscoffee.netlify.app/",
-            "categoria":["HTML", "CSS", "JS"]
-        },
-        {
             "id":5,
-            "titulo":"Trabajo",
-            "imagen":"./img/proyectos/ricardoRodriguez.png",
-            "tipoImagen":"",
-            "link":"https://eltoquericardo.github.io/ricardo-rodriguez/index.html",
-            "categoria":["HTML", "CSS", "JS"]
+            "titulo":"Modelo de Blog",
+            "imagen":"./img/proyectos/modelo-blog.png",
+            "tipoImagen":"Modelo de Blog",
+            "link":"https://modelo-de-blog.netlify.app/",
+            "categoria":["HTML", "CSS", "JS", "Bootstrap", "Sass"]
         },
         {
             "id":6,

@@ -13,32 +13,28 @@
 
 <body>
   <header>
-    <div class="container">
-      <nav class="menu-nav">
+    <div class="container menu-nav">
         <div class="logo-container">
-          <a href="index-english.html" title="Home"><img class="logo" width="150" src="./img/logo-drj.png" alt="Logo" /></a>
+          <a href="index.html" title="Home"><img class="logo" src="./img/logo-drj.png" alt="Logo"></a>
         </div>
         <h1 class="titulo">DR.J Full Stack Devs</h1>
-        <div class="navbar-container">
-          <ul>
-
-            <li><a href="index-english.html" rel="noopener noreferrer" title="Home"
-                class="red-izq-sup red-izq-inf">Home</a>
-            </li>
-            <li><a href="developments.html" rel="noopener noreferrer" title="Developments">Developments</a>
-            </li>
-            <li><a href="about-us.html" rel="noopener noreferrer" title="About-us">About us</a>
-            </li>
-            <li><a href="contact-us.html" rel="noopener noreferrer" title="Contact us"
-                class="red-der-sup red-der-inf">Contact</a>
-            </li>
-
-            <li><a href="proyecto-a-medida.html" rel="noopener noreferrer" title="versión-español">Español</a></li>
-          </ul>
-        </div>
-      </nav>
+          <nav id="nav" class="main-nav">
+            <div class="nav-links navbar-container">
+              <ul>
+                <li><a href="index-english.html" rel="noopener noreferrer" title="Home" class="link-item">Home</a></li>
+                <li><a href="developments.html" rel="noopener noreferrer" title="Proyectos" class="link-item">Developments</a></li>
+                <li><a href="about-us.html" rel="noopener noreferrer" title="Acerca De" class="link-item">About us</a></li>
+                <li><a href="contact-us.html" rel="noopener noreferrer" title="Contacto" class="link-item">Contact us</a></li>
+                <li><a href="proyecto-a-medida.html" rel="noopener noreferrer" title="version-español">Español</a></li>
+              </ul>
+            </div>
+          </nav>
+          <button id="button-menu" class="button-menu ocultar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
     </div>
-
   </header>
   <main class="container">
     <div class="titulo for-centerthings">
@@ -250,22 +246,17 @@
 
   <footer>
     <div class="contenedor-redes">
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./img/facebook.png"
-          alt="facebook" title="Facebook" /></a>
-      <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png"
-          alt="instagram" title="Instagram" /></a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png"
-          alt="linkedin" title="Linkedin" /></a>
-      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="./img/gorjeo.png"
-          alt="twitter" title="Twitter" /></a>
-      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img src="./img/github5.png"
-          alt="github" title="Github" /></a>
-    </div>
-    <div class="copyright">
-      <p>
-        © 2022 Dr. J Developers
-      </p>
-    </div>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="./img/facebook.png" alt="facebook" title="Facebook"></a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png" alt="instagram" title="Instagram"></a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png" alt="linkedin" title="Linkedin"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img src="./img/gorjeo.png" alt="twitter" title="Twitter"></a>
+        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><img src="./img/github5.png" alt="github" title="Github"></a>
+      </div>
+      <div class="copyright">
+          <p>
+              © 2022 Dr. J Developers
+            </p>
+        </div>
   </footer>
   <script src="./js/burger.js"></script>
   <script src="./js/main.js"></script>
