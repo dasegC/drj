@@ -201,6 +201,7 @@ footer {
   align-items: center;
   background-color: var(--colorfondo);
   width: 100%;
+  margin-top: 300px;
 }
 
 footer .contenedor-redes {
