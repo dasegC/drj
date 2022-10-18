@@ -57,7 +57,7 @@
           <form id="contact-form" data-netlify="true" method="post" target="_blank" rel="noopener noreferrer">
             <div class="col-12">
               <label for="inputEmpresa" class="form-label texto textSize2">Empresa</label>
-              <input type="text" name="nombre-empresa" class="form-control" id="inputEmpresa" placeholder="Nombre Empresa">
+              <input type="text" name="nombre" class="form-control" id="inputEmpresa" placeholder="Nombre Empresa">
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label texto textSize2">Domicilio</label>
@@ -65,12 +65,12 @@
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label texto textSize2">Ciudad</label>
-              <input type="text" name="ciudad" class="form-control" id="inputCity">
+              <input type="text" name="ciudad" class="form-control" id="inputCity" placeholder="Ciudad">
             </div>
             <div class="col-md-4">
               <label for="inputState" class="form-label texto textSize2">Pais</label>
               <select id="inputState" name="pais" class="form-select">
-                <option selected>Buscar</option>
+                <option value=""">Seleccionar</option>
                 <option value="AF">Afganistán</option>
                 <option value="AL">Albania</option>
                 <option value="DE">Alemania</option>
@@ -309,17 +309,17 @@
             </div>
             <div class="col-md-2">
               <label for="inputZip" class="form-label texto textSize2">Cod.Postal</label>
-              <input type="text" name="codigo-postal" class="form-control" id="inputZip">
+              <input type="text" name="cp" class="form-control" id="inputZip" placeholder="CP">
             </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label texto textSize2">Email</label>
-              <input type="email" name="email" class="form-control" id="inputEmail4">
+              <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Ingrese email">
             </div>
             <div class="col-12">
               <div class="form-check">
-                <input class="form-check-input" name="registro" type="checkbox" id="gridCheck">
+                <input class="form-check-input" name="terminos" type="checkbox" id="gridCheck">
                 <label class="form-check-label texto" for="gridCheck">
-                  Registrar
+                  <a href="#">Acepto terminos y condiciones</a>
                 </label>
               </div>
             </div>
@@ -370,4 +370,5 @@
   </footer>
   <script src="./js/burger.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/validacion-contacto.js"></script>
 </body>

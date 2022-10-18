@@ -8,6 +8,8 @@
   <meta name="keywords" content="web, development, desarrollo, programming, programación">
   <meta name="author" content="Dr. J Web Developers">
   <title>Dr. J Web Developers|Custum project</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -38,7 +40,7 @@
   </header>
   <main class="container">
     <div class="titulo for-centerthings">
-      <h1 class="hero-title">Tell us what you need!</h1>
+      <h1 class="hero-title margin">Tell us what you need!</h1>
     </div>
     <section class="title-tuproyecto">
 
@@ -72,22 +74,22 @@
           <h2>1 - Which of these services would you like for your business?</h2>
           <p class="textSize2">You can choose more than one opcion</p>
 
-          <input type="checkbox" id="armadoRedes" name="armadoRedes" value="armadoRedesValue" autofocus>
+          <input  class="form-check-input" type="checkbox" id="armadoRedes" name="armadoRedes" value="armadoRedesValue" autofocus>
           <label for="armadoRedes">Social Media Design (Professional)</label><br>
 
-          <input type="checkbox" id="servicioCManagment" name="servicioCManagment" value="servicioCManagmentValue">
+          <input  class="form-check-input" type="checkbox" id="servicioCManagment" name="servicioCManagment" value="servicioCManagmentValue">
           <label for="servicioCManagment">Community Management Service</label><br>
 
-          <input type="checkbox" id="dosIdiomas" name="dosIdiomas" value="dosIdiomasValue">
+          <input  class="form-check-input" type="checkbox" id="dosIdiomas" name="dosIdiomas" value="dosIdiomasValue">
           <label for="dosIdiomas">Website Bilingual</label><br>
 
-          <input type="checkbox" id="bbdd" name="bbdd" value="bbddValue">
+          <input  class="form-check-input" type="checkbox" id="bbdd" name="bbdd" value="bbddValue">
           <label for="bbdd">Database</label><br>
 
-          <input type="checkbox" id="carritoCompras" name="carritoCompras" value="carritoComprasValue">
+          <input  class="form-check-input" type="checkbox" id="carritoCompras" name="carritoCompras" value="carritoComprasValue">
           <label for="carritoCompras">Shopping cart</label><br>
 
-          <input type="checkbox" id="canalExclusivo" name="canalExclusivo" value="canalExclusivoValue">
+          <input  class="form-check-input" type="checkbox" id="canalExclusivo" name="canalExclusivo" value="canalExclusivoValue">
           <label for="canalExclusivo">Exclusive Information Channel</label><br>
           <hr>
 
@@ -95,43 +97,43 @@
 
           <h2>2 -What is your degree of knowledge of each service in a business environment?</h2>
 
-          <table>
+          <table class="table table-sm table-dark">
             <tr>
-              <th class="textSize2">Servicio</th>
-              <th>None</th>
-              <th>Medium</th>
-              <th>High</th>
+              <th class="textSize2 centrado table-light">Servicio</th>
+              <th  class="centrado table-light">None</th>
+              <th  class="centrado table-light">Medium</th>
+              <th  class="centrado table-light">High</th>
             </tr>
             <tr>
               <td>Social Media</td>
-              <td>
-                <input type="radio" id="redesSocialesAlta" name="redesSociales-name" value="redesSocialesAltaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="redesSocialesAlta" name="redesSociales-name" value="redesSocialesAltaValue">
               </td>
 
-              <td>
-                <input type="radio" id="redesSocialesMedia" name="redesSociales-name" value="redesSocialesMediaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="redesSocialesMedia" name="redesSociales-name" value="redesSocialesMediaValue">
               </td>
 
-              <td>
-                <input type="radio" id="redesSocialesBaja" name="redesSociales-name" value="redesSocialesBajaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="redesSocialesBaja" name="redesSociales-name" value="redesSocialesBajaValue">
               </td>
             </tr>
 
             <tr>
               <td>Digital Marketing</td>
 
-              <td>
-                <input type="radio" id="MarketingDigital-baja" name="MarketingDigital-name"
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="MarketingDigital-baja" name="MarketingDigital-name"
                   value="MarketingDigital-bajaValue">
               </td>
 
-              <td>
-                <input type="radio" id="MarketingDigital-media" name="MarketingDigital-name"
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="MarketingDigital-media" name="MarketingDigital-name"
                   value="MarketingDigital-mediaValue">
               </td>
 
-              <td>
-                <input type="radio" id="MarketingDigital-alta" name="MarketingDigital-name"
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="MarketingDigital-alta" name="MarketingDigital-name"
                   value="MarketingDigital-altaValue">
               </td>
             </tr>
@@ -139,14 +141,14 @@
 
             <tr>
               <td>Dynamic Web Pages</td>
-              <td>
-                <input type="radio" id="webDina-baja" name="webDina-name" value="webDina-bajaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="webDina-baja" name="webDina-name" value="webDina-bajaValue">
               </td>
-              <td>
-                <input type="radio" id="webDina-media" name="webDina-name" value="webDina-mediaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="webDina-media" name="webDina-name" value="webDina-mediaValue">
               </td>
-              <td>
-                <input type="radio" id="webDina-alta" name="webDina-name" value="webDina-altaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="webDina-alta" name="webDina-name" value="webDina-altaValue">
               </td>
             </tr>
 
@@ -154,29 +156,29 @@
 
             <tr>
               <td>Online Sale (shopping cart)</td>
-              <td>
-                <input type="radio" id="vtaOnline-baja" name="vtaOnline-name" value="vtaOnline-bajaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="vtaOnline-baja" name="vtaOnline-name" value="vtaOnline-bajaValue">
               </td>
-              <td>
-                <input type="radio" id="vtaOnline-media" name="vtaOnline-name" value="vtaOnline-mediaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="vtaOnline-media" name="vtaOnline-name" value="vtaOnline-mediaValue">
               </td>
-              <td>
-                <input type="radio" id="vtaOnline-alta" name="vtaOnline-name" value="vtaOnline-altaValue">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="vtaOnline-alta" name="vtaOnline-name" value="vtaOnline-altaValue">
               </td>
             </tr>
 
             <tr>
               <td>Legal About Online Sales</td>
-              <td>
-                <input type="radio" id="legalesVtaOnline-baja" name="legalesVtaOnline-name"
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="legalesVtaOnline-baja" name="legalesVtaOnline-name"
                   value="legalesVtaOnline-bajaValue">
               </td>
-              <td>
-                <input type="radio" id="legalesVtaOnline-media" name="legalesVtaOnline-name"
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="legalesVtaOnline-media" name="legalesVtaOnline-name"
                   value="legalesVtaOnline-mediaValue">
-              </td>
-              <td>
-                <input type="radio" id="legalesVtaOnline-alta" name="legalesVtaOnline-name"
+              </td class="centrado">
+              <td class="centrado">
+                <input class="form-check-input" type="radio" id="legalesVtaOnline-alta" name="legalesVtaOnline-name"
                   value="legalesVtaOnline-altaValue">
               </td>
             </tr>
@@ -191,17 +193,17 @@
           <h2>3 - When you work with us, you are looking for:</h2>
           <p class="textSize2	">Choose only one option</p>
 
-          <input type="radio" id="trabajarRedesPro" name="expectativa" value="trabajarRedesProValue">
+          <input class="form-check-input" type="radio" id="trabajarRedesPro" name="expectativa" value="trabajarRedesProValue">
           <label for="trabajarRedesPro">Make my social media looks professional.
           </label>
           <br>
 
-          <input type="radio" id="crecerVentas" name="expectativa" value="crecerVentasValue">
+          <input  class="form-check-input"type="radio" id="crecerVentas" name="expectativa" value="crecerVentasValue">
           <label for="crecerVentas">Grow my online sales and have suitable assistance.
           </label>
           <br>
 
-          <input type="radio" id="sinAsistencia" name="expectativa" value="sinAsistenciaValue">
+          <input class="form-check-input" type="radio" id="sinAsistencia" name="expectativa" value="sinAsistenciaValue">
           <label for="sinAsistencia">Do not need assistance after completing the project.
           </label>
           <br>
@@ -212,15 +214,15 @@
           <h2>4 - Period in which you would be willing to work with us?</h2>
           <p class="textSize2">Choose only one option</p>
 
-          <input type="radio" id="menor-12-meses" name="plazo" value="menor-12-mesesValue">
+          <input class="form-check-input" type="radio" id="menor-12-meses" name="plazo" value="menor-12-mesesValue">
           <label for="menor-12-meses">Less than 1 year</label>
           <br>
 
-          <input type="radio" id="entre-uno-cinco" name="plazo" value="entre-uno-cincoValue">
+          <input class="form-check-input" type="radio" id="entre-uno-cinco" name="plazo" value="entre-uno-cincoValue">
           <label for="entre-uno-cinco">Between 1 and 5 years</label>
           <br>
 
-          <input type="radio" id="mayor-a-5" name="plazo" value="mayor-a-5Value">
+          <input class="form-check-input" type="radio" id="mayor-a-5" name="plazo" value="mayor-a-5Value">
           <label for="mayor-a-5">More than 5 years</label>
           <br>
 
@@ -229,11 +231,11 @@
         <div class="text-area">
           <Label class="textSize1">Tell us something about you!</Label><br>
           <textarea name="comment" form="client-form" name="user-message" maxlength="100"></textarea><br>
-          <input class="input-width" type="text" name="user-name" minlength="4" maxlength="40" placeholder="Name"
+          <input class="input-width  form-control" type="text" name="user-name" minlength="4" maxlength="40" placeholder="Name"
             required> <br>
-          <input class="input-width" type="email" name="user-email" minlength="5" maxlength="40" placeholder="e-mail"
+          <input class="input-width  form-control" type="email" name="user-email" minlength="5" maxlength="40" placeholder="e-mail"
             required><br>
-          <input class="input-width" type="number" name="age" placeholder="Age" maxlength="3" min="18" max="110"
+          <input class="input-width  form-control" type="number" name="age" placeholder="Age" maxlength="3" min="18" max="110"
             required><br>
             <div data-netlify-recaptcha="true"></div>
           <input type="submit" value="Submit">
