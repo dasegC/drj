@@ -34,18 +34,18 @@
         },
         {
             "id":5,
-            "titulo":"Modelo de Blog",
+            "titulo":"Blog template",
             "imagen":"./img/proyectos/modelo-blog.png",
             "tipoImagen":"Modelo de Blog",
             "link":"https://modelo-de-blog.netlify.app/",
-            "categoria":["HTML", "CSS", "JS", "Bootstrap", "Sass"]
+            "categoria":["HTML", "CSS", "JS"]
         },
         {
             "id":6,
-            "titulo":"Trabajo",
-            "imagen":"./img/proyectos/simpleLayout.png",
+            "titulo":"Blog",
+            "imagen":"./img/proyectos/dukan.png",
             "tipoImagen":"",
-            "link":"https://simplelayout2022.netlify.app/",
+            "link":"http://dukanargentina.blogspot.com/",
             "categoria":["HTML", "CSS", "JS"]
         }
     ]
