@@ -75,6 +75,10 @@ section .hero-title {
   padding: 0;
 }
 
+.padding-index {
+  padding-top: 250px;
+}
+
 .menu-nav {
   display: flex;
   justify-content: space-evenly;
