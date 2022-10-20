@@ -3,15 +3,13 @@ let datos = [];
 fetch(url)
     .then(response => response.json())
     .then(data => {
-        /* console.log(data) */
         datos = data.datos
-        /* console.log(datos) */
 
 
-        let cad = ``
+        let cadena = ``
         for (proyecto of datos) {
 
-            cad += `    <div class="project-container">
+            cadena += `    <div class="project-container">
                 <h3 class="titulo subrayado">${proyecto.titulo}</h3>
                 <div class="contenedor-trabajos">
                     <div class="trabajo">
@@ -27,11 +25,11 @@ fetch(url)
                     </div>
                 </div>
                 `
-            cad += `</div>`
+            cadena += `</div>`
 
-            console.log(cad)
+            console.log(cadena)
 
-            document.getElementById('proyectos').innerHTML = cad
+            document.getElementById('proyectos').innerHTML = cadena
         }
     }
     );

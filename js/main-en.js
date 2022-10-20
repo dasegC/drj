@@ -8,10 +8,10 @@ fetch(url)
         /* console.log(datos) */
 
 
-        let cad = ``
+        let string = ``
         for (proyecto of datos) {
 
-            cad += `    <div class="project-container">
+            string += `    <div class="project-container">
                 <h3 class="titulo subrayado">${proyecto.titulo}</h3>
                 <div class="contenedor-trabajos">
                     <div class="trabajo">
@@ -27,11 +27,11 @@ fetch(url)
                     </div>
                 </div>
                 `
-            cad += `</div>`
+            string += `</div>`
 
-            console.log(cad)
+            console.log(string)
 
-            document.getElementById('proyectos').innerHTML = cad
+            document.getElementById('proyectos').innerHTML = string
         }
     }
     );
